@@ -8,7 +8,7 @@
 .text_section_h3 {
     position: absolute;
     height: 30px;
-    width: 90%;
+    width: 50%;
     background-color: rgb(172, 187, 230);
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
 .text_section {
     position: absolute;
     top: 80px;
-    width: 93%;
+    width: 87%;
     height: 200px;
     border-radius: 15px;
     display: flex;
@@ -62,7 +62,7 @@
 
 .images1 {
     position: absolute;
-    width: 350px;
+    width: 250px;
     display: flex;
     justify-content: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
@@ -72,11 +72,11 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 260px;
+    top: 200px;
 }
 
 .arrow1_box {
-    top: 330px;
+    top: 270px;
     position: absolute;
     width: 96%;
     display: flex;
@@ -93,7 +93,7 @@
 }
 
 .cut_images_container {
-    top: 450px;
+    top: 370px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -106,24 +106,24 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, .5); */
 
 }
 
 .cutting_images {
-    width: 60px;
-    height: 50px;
+    width: 45px;
+    height: 35px;
 }
 
 .cut_images_p {
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 285px;
+    top: 215px;
 }
 
 .arrow2_box {
-    top: 360px;
+    top: 280px;
     position: absolute;
     width: 96%;
     display: flex;
@@ -133,7 +133,7 @@
 }
 
 .black_images_container {
-    top: 930px;
+    top: 755px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@
 }
 
 .delete_black_images_container {
-    top: 1410px;
+    top: 1140px;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -154,7 +154,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 1900px;
+    top: 1530px;
 }
 
 .probability_content {
@@ -162,7 +162,7 @@
     display: flex;
     justify-content: center;
     /* background-color: rgb(210, 242, 242); */
-    width: 300px;
+    width: 220px;
     height: 120px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 
@@ -202,7 +202,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 190px;
+    top: 180px;
     height: 100px;
 }
 
@@ -210,17 +210,17 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 2190px;
+    top: 1800px;
     width: 95%;
-    height: 230px;
+    height: 400px;
 }
 
 .conclusion_h4 {
     display: flex;
     justify-content: center;
     /* background-color: aqua; */
-    width: 200px;
-    height: 100px;
+    width: 170px;
+    height: 80px;
     align-items: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
@@ -229,5 +229,19 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    top: 120px;
+    top: 110px;
+}
+
+.hudie_size {
+    width: 70%;
+    position: absolute;
+    top: 130px;
+    left: 7%;
+}
+
+.liewen1_size {
+    top: 180px;
+    width: 70%;
+    position: absolute;
+    right: .1%;
 }
