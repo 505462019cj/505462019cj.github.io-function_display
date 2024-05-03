@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./function_display.css">
+</head>
+
+<body>
+    <div class="all">
+        <!-- 文字部分 -->
+        <h3 class="text_section_h3">过程详解</h3>
+        <!-- 内容 -->
+        <div class="text_section">
+            <p class="text_section_p">
+                先将图像进行切割，然后将每一个小块放入VIT网络进行测试检测每一个小块是否有裂纹，
+                有裂纹的小块不做改变，对没有裂纹的小块进行标黑，接着删除标黑的小块。<br>
+                最后将剩下的小块放入神经网络得出横纹、竖纹、网状纹三种纹路的概率，概率最高的即为
+                该裂纹的种类。
+            </p>
+        </div>
+        <!-- 图片展示 -->
+        <div class="images_display_box">
+            <h3 class="text_section_h3">功能展示</h3>
+            <div class="container">
+                <!-- 图片1 -->
+                <div class="images1_box">
+                    <img src="./images/liewen1.jpg" alt="" class="liewen1_size">
+                    <img src="./images/Original_image_of_network_cracks.JPG" alt="" class="images1">
+                    <p class="images1_p">原始待检测图片</p>
+
+                </div>
+                <!-- 箭头1 -->
+                <div class="arrow1_box">
+
+                    <img src="./images/arrow2.png" alt="" class="arrow1">
+                </div>
+                <!-- 切块1 -->
+                <div class="cut_images_container">
+                    <table class="cut_images_box">
+                        <tr>
+                            <td>
+                                <img src="images\1_01.gif" alt="" class="cutting_images">
+                                <img src="images\1_02.gif" alt="" class="cutting_images">
+                                <img src="images\1_03.gif" alt="" class="cutting_images">
+                                <img src="images\1_04.gif" alt="" class="cutting_images">
+                                <img src="images\1_05.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_06.gif" alt="" class="cutting_images">
+                                <img src="images\1_07.gif" alt="" class="cutting_images">
+                                <img src="images\1_08.gif" alt="" class="cutting_images">
+                                <img src="images\1_09.gif" alt="" class="cutting_images">
+                                <img src="images\1_10.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_11.gif" alt="" class="cutting_images">
+                                <img src="images\1_12.gif" alt="" class="cutting_images">
+                                <img src="images\1_13.gif" alt="" class="cutting_images">
+                                <img src="images\1_14.gif" alt="" class="cutting_images">
+                                <img src="images\1_15.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_16.gif" alt="" class="cutting_images">
+                                <img src="images\1_17.gif" alt="" class="cutting_images">
+                                <img src="images\1_18.gif" alt="" class="cutting_images">
+                                <img src="images\1_19.gif" alt="" class="cutting_images">
+                                <img src="images\1_20.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_21.gif" alt="" class="cutting_images">
+                                <img src="images\1_22.gif" alt="" class="cutting_images">
+                                <img src="images\1_23.gif" alt="" class="cutting_images">
+                                <img src="images\1_24.gif" alt="" class="cutting_images">
+                                <img src="images\1_25.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="cut_images_p">切块后的图片</p>
+                    <!-- 箭头2 -->
+                    <div class="arrow2_box">
+                        <img src="./images/arrow2.png" alt="" class="arrow1">
+                    </div>
+                </div>
+                <!-- 标黑后 -->
+                <div class="black_images_container">
+                    <table class="cut_images_box">
+                        <tr>
+                            <td>
+                                <img src="images\pictureblack_01.gif" alt="" class="cutting_images">
+                                <img src="images\1_02.gif" alt="" class="cutting_images">
+                                <img src="images\1_03.gif" alt="" class="cutting_images">
+                                <img src="images\1_04.gif" alt="" class="cutting_images">
+                                <img src="images\pictureblack_01.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_06.gif" alt="" class="cutting_images">
+                                <img src="images\1_07.gif" alt="" class="cutting_images">
+                                <img src="images\1_08.gif" alt="" class="cutting_images">
+                                <img src="images\1_09.gif" alt="" class="cutting_images">
+                                <img src="images\1_10.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_11.gif" alt="" class="cutting_images">
+                                <img src="images\1_12.gif" alt="" class="cutting_images">
+                                <img src="images\1_13.gif" alt="" class="cutting_images">
+                                <img src="images\1_14.gif" alt="" class="cutting_images">
+                                <img src="images\1_15.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_16.gif" alt="" class="cutting_images">
+                                <img src="images\1_17.gif" alt="" class="cutting_images">
+                                <img src="images\1_18.gif" alt="" class="cutting_images">
+                                <img src="images\1_19.gif" alt="" class="cutting_images">
+                                <img src="images\1_20.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\pictureblack_01.gif" alt="" class="cutting_images">
+                                <img src="images\pictureblack_01.gif" alt="" class="cutting_images">
+                                <img src="images\1_23.gif" alt="" class="cutting_images">
+                                <img src="images\1_24.gif" alt="" class="cutting_images">
+                                <img src="images\1_25.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="cut_images_p">将没有裂纹的小块进行标黑</p>
+                    <!-- 箭头3 -->
+                    <div class="arrow2_box">
+                        <img src="./images/arrow2.png" alt="" class="arrow1">
+                    </div>
+                </div>
+                <!-- 删除标黑的小块 -->
+                <div class="delete_black_images_container">
+                    <table class="cut_images_box">
+                        <tr>
+                            <td>
+                                <img src="images\picturewhite1_08.gif" alt="" class="cutting_images">
+                                <img src="images\1_02.gif" alt="" class="cutting_images">
+                                <img src="images\1_03.gif" alt="" class="cutting_images">
+                                <img src="images\1_04.gif" alt="" class="cutting_images">
+                                <img src="images\picturewhite1_08.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_06.gif" alt="" class="cutting_images">
+                                <img src="images\1_07.gif" alt="" class="cutting_images">
+                                <img src="images\1_08.gif" alt="" class="cutting_images">
+                                <img src="images\1_09.gif" alt="" class="cutting_images">
+                                <img src="images\1_10.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_11.gif" alt="" class="cutting_images">
+                                <img src="images\1_12.gif" alt="" class="cutting_images">
+                                <img src="images\1_13.gif" alt="" class="cutting_images">
+                                <img src="images\1_14.gif" alt="" class="cutting_images">
+                                <img src="images\1_15.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\1_16.gif" alt="" class="cutting_images">
+                                <img src="images\1_17.gif" alt="" class="cutting_images">
+                                <img src="images\1_18.gif" alt="" class="cutting_images">
+                                <img src="images\1_19.gif" alt="" class="cutting_images">
+                                <img src="images\1_20.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images\picturewhite1_08.gif" alt="" class="cutting_images">
+                                <img src="images\picturewhite1_08.gif" alt="" class="cutting_images">
+                                <img src="images\1_23.gif" alt="" class="cutting_images">
+                                <img src="images\1_24.gif" alt="" class="cutting_images">
+                                <img src="images\1_25.gif" alt="" class="cutting_images">
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="cut_images_p">删除标黑的小块</p>
+                    <!-- 箭头3 -->
+                    <div class="arrow2_box">
+                        <img src="./images/arrow2.png" alt="" class="arrow1">
+                    </div>
+                </div>
+                <!-- 3个概率 -->
+                <div class="probability_container">
+                    <div class="probability_content">
+                        <h4 class="probability_h4_1">横向：0.03</h4>
+                        <h4 class="probability_h4_2">纵向：0.05</h4>
+                        <h4 class="probability_h4_3">网状：0.92</h4>
+                    </div>
+                    <p class="probability_p">进行分类检测</p>
+                    <!-- 箭头4 -->
+                    <div class="arrow4_box">
+                        <img src="./images/arrow2.png" alt="" class="arrow1">
+                    </div>
+                </div>
+                <!-- 结论 -->
+                <div class="conclusion_box">
+                    <div>
+                        <h4 class="conclusion_h4">该裂纹为网状裂纹</h4>
+                    </div>
+
+                    <img src="./images/hudie.jpg" alt="" class="hudie_size">
+                    <p class="conclusion_p">结论</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+
+</html>
